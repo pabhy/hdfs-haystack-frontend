@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Revenue from '@/views/Revenue'
+import ImageDownloader from '@/views/ImageDownloader'
 
 Vue.use(Router)
 
@@ -10,16 +10,16 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'revenue',
-      component: Revenue
+      name: 'download-image',
+      component: ImageDownloader
     },
     {
-      path: '/entry-form',
-      name: 'entry-form',
+      path: '/upload',
+      name: 'upload-image',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ '@/views/EntryForm.vue')
+      component: () => import(/* webpackChunkName: "about" */ '@/views/ImageUploader.vue')
     }
   ]
 })

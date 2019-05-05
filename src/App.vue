@@ -19,7 +19,7 @@
     </v-navigation-drawer>
     <v-toolbar color="primary" dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>NC State Dining Services</v-toolbar-title>
+      <v-toolbar-title>HDFS Haystack</v-toolbar-title>
     </v-toolbar>
     <v-content>
       <v-fade-transition mode="out-in">
@@ -34,13 +34,13 @@ export default {
   data: () => ({
     drawer: null,
     menu: [{
-      title: 'Revenue',
-      icon: 'attach_money',
-      link: 'revenue'
+      title: 'Download Image',
+      icon: 'cloud_download',
+      link: 'download-image'
     }, {
-      title: 'Form',
-      icon: 'create',
-      link: 'entry-form'
+      title: 'Upload Image',
+      icon: 'cloud_upload',
+      link: 'upload-image'
     }]
   }),
   methods: {
